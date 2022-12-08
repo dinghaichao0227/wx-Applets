@@ -1,0 +1,14 @@
+<view class="container">
+  <page-meta>
+    <navigation-bar title="{{nbTitle}}" loading="{{nbLoading}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" color-animation-duration="2000" color-animation-timing-func="easeIn" />
+  </page-meta>
+  <view class="header">
+    <text>我是首页</text>
+  </view>
+  <view>
+    <button bindtap="onBtn">文件系统</button>
+  </view>
+  <view>
+    <button bindtap="onBtn1">点击事件</button>
+  </view>
+</view>

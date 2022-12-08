@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/user/index",
+    "pages/index/index"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark", 
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "我是新手",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#F5F5F5",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/state/icon/bbs.png",
+        "selectedIconPath": "pages/state/icon/bb.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "活动",
+        "iconPath": "pages/state/icon/hdg.png",
+        "selectedIconPath": "pages/state/icon/hdb.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "pages/state/icon/wds.png",
+        "selectedIconPath": "pages/state/icon/wd.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,92 @@
+<view class="container">
+  <page-meta>
+    <navigation-bar title="{{nbTitle}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" color-animation-timing-func="easeIn" />
+  </page-meta>
+  <view class="header">
+    <view class="header-top">
+      <view class="top">
+        <view class="top-left">
+          <image wx:if="{{avatarUrl}}" class="img" src="{{avatarUrl}}" />
+          <image wx:else class="img" src="../state/icon/wd.png" />
+        </view>
+        <view class="top-right">
+          <view class="top-right-top">
+            <text wx:if="{{nickName}}">{{nickName}}</text>
+            <text wx:else class="size-btn" bindtap="getUserInfo" style="font-size: 25rpx; color: #5a5a5a; margin-bottom: 10rpx;">登录 ></text>
+            <!-- <button size="mini" style="font-size: 20rpx; color: #5a5a5a;">本店公众号 ></button> -->
+          </view>
+        </view>
+      </view>
+      <view class="bottom">
+        <view class="bottom-left">
+          <text class="bottom-left-size">0 张</text>
+          <text class="bottom-left-font">我的水票</text>
+        </view>
+        <view class="bottom-main">
+          <text class="bottom-main-size">0 桶</text>
+          <text class="bottom-main-font">电子押金</text>
+        </view>
+        <view class="bottom-right">
+          <text class="bottom-right-size">0 积分</text>
+          <text class="bottom-right-font">积分商城</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="main">
+    <view class="card">
+      <view class="title">
+        <text>我的订单</text>
+      </view>
+      <view class="card-btn">
+        <view class="btn-box1">
+          <image class="box1-img" src="../state/icon/hdg.png" mode="" />
+          <text class="box1-size">待付款</text>
+        </view>
+        <view class="btn-box2">
+          <image class="box2-img" src="../state/icon/hdb.png" mode="" />
+          <text class="box2-size">待配送</text>
+        </view>
+        <view class="btn-box3">
+          <image class="box3-img" src="../state/icon/bbs.png" mode="" />
+          <text class="box3-size">配送中</text>
+        </view>
+        <view class="btn-box4">
+          <image class="box4-img" src="../state/icon/bb.png" />
+          <text class="box4-size">已完成</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="main">
+    <view class="card">
+      <view class="title">
+        <text>我的服务</text>
+      </view>
+      <view class="card-btn">
+        <view class="btn-box1">
+          <image class="box1-img" src="../state/icon/hdg.png" mode="" />
+          <text class="box1-size">地址管理</text>
+        </view>
+        <view class="btn-box2">
+          <image class="box2-img" src="../state/icon/hdb.png" mode="" />
+          <text class="box2-size">水票记录</text>
+        </view>
+        <view class="btn-box3">
+          <image class="box3-img" src="../state/icon/bbs.png" mode="" />
+          <text class="box3-size">账号管理</text>
+        </view>
+        <view class="btn-box4">
+          <image class="box4-img" src="../state/icon/bb.png" />
+          <text class="box4-size">意见反馈</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <text>客服电话: 15140907862</text>
+  </view>
+  <view>
+    <text class="size">免责声明：本店商品及售后由该店提供</text>
+  </view>
+</view>

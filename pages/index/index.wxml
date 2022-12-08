@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <page-meta>
+    <navigation-bar title="{{nbTitle}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" color-animation-timing-func="easeIn" />
+  </page-meta>
+  <view class="userinfo">
+    <button type="primary">页面主操作 Normal</button>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="camera">
+    <!-- <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px; margin-bottom: 20rpx;"/> -->
+    <button type="primary" bindtap="takePhoto">拍照</button>
+    <view>预览</view>
+    <image src="{{image}}" mode="widthFix" />
+  </view>
+
+</view>
