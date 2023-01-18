@@ -1,0 +1,33 @@
+<view class="paying">
+  <view class="card">
+    <view class="card-header">
+      <text class="card-header-left">订单时间：2022-08-26 09:45:59</text>
+      <text class="card-header-right">已完成</text>
+    </view>  
+    <view class="card-header2">
+      <text class="card-header2-left">农夫山泉19Lx1</text>
+      <text class="card-header2-right">实付款：30元</text>
+    </view>   
+    <view class="card-main">
+      <image class="card-main-left" src="{{logo}}"/>
+      <text class="card-main-right">北京市丰台区三环新城7号院7号楼4单元2703</text>
+    </view> 
+    <view class="card-footer">
+      <view class="card-footer-left">
+        <view class="card-footer-left-top">
+          <image class="top-logo" src="{{logo2}}"/>
+          <text class="top-text">2022-08-26 09:45:59, 由 刘哥 开始配送</text>
+        </view>
+        <view class="card-footer-left-bottom">
+          <!-- <image class="bottom-logo" src="{{logo}}"/> -->
+          <icon class="bottom-logo" color="#DCDCDC" type="success" size="23" />
+          <text class="bottom-text">2022-08-26 09:45:59送达，订单完成</text>
+        </view>
+      </view>
+      <view class="card-footer-right">
+        <image class="right-logo" src="{{leftLogo}}" />
+      </view>
+    </view> 
+  </view>
+  
+</view>

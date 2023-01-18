@@ -1,0 +1,104 @@
+/* pages/components/paying.wxss */
+
+.paying {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 40vh;
+  align-items: center;
+}
+.card {
+  width: 96vw;
+  height: 40vh;
+  margin: 55px 0rpx; 
+  background-color: #fff;
+  border-radius: 5rpx;
+
+}
+.card-header {
+  display: flex;
+  justify-content:space-between;
+  margin: 15rpx 25rpx;
+  padding-bottom: 25rpx;
+  border-bottom: 1rpx dotted #dddcdc;
+}
+.card-header2 {
+  display: flex;
+  justify-content:space-between;
+  margin: 25rpx 25rpx;
+  padding-bottom: 25rpx;
+  border-bottom: 1rpx dotted #dddcdc;
+}
+.card-header2-left {
+  font-size: 18px;
+}
+.card-header2-right {
+  font-size: 13px;
+  color: red
+}
+.card-main {
+  display: flex;
+  margin: 25rpx 25rpx;
+  padding-bottom: 25rpx;
+  border-bottom: 1rpx dotted #dddcdc;
+  align-items: center;
+}
+.card-main-left {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.card-main-right {
+  font-size: 13px;
+}
+.card-footer {
+  display: flex;
+  margin: 25rpx 25rpx;
+  padding-bottom: 25rpx;
+  justify-content: space-between;
+}
+.card-footer-left {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  height:15vh;
+  justify-content: center;
+}
+.card-footer-left-top {
+  display: flex;
+  width: 100vw;
+  margin-bottom: 30rpx;
+}
+.top-logo {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.card-footer-left-bottom {
+  display: flex;
+  width: 100vw;
+}
+.bottom-logo {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.top-text {
+  font-size: 13px;
+}
+.bottom-text {
+  font-size: 13px;
+}
+.card-footer-right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  width: 65vw;
+  height:15vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+.right-logo {
+  width: 70rpx;
+  height: 70rpx;
+}

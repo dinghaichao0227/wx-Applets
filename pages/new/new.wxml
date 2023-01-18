@@ -1,0 +1,23 @@
+<!--pages/new.wxml-->
+<view class="content">
+  <view class="bottom">
+    <view class="bottom-left">
+      <text class="bottom-left-font" bindtap="onSubmit1" style="border-bottom:{{border1}}">待支付</text>
+    </view>
+    <view class="bottom-main">
+      <text class="bottom-main-font" bindtap="onSubmit2" style="border-bottom:{{border2}}">待配送</text>
+    </view>
+    <view class="bottom-right">
+      <text class="bottom-right-font" bindtap="onSubmit3" style="border-bottom:{{border3}}">配送中</text>
+    </view>
+    <view class="bottom-right">
+      <text class="bottom-right-font" bindtap="onSubmit4" style="border-bottom:{{border4}}">已完成</text>
+    </view>
+  </view>
+  <view wx:if="{{paying == 4 ? true : false}}">
+    <paying></paying>
+  </view>
+  <view wx:if="{{noTable == null ? true : false}}">
+    <noTable></noTable>
+  </view> 
+</view>

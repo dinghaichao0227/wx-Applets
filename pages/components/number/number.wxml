@@ -1,0 +1,11 @@
+<view class="box">
+  <view>
+    <text style="display: inline-block; text-align: center; line-height: 33px;">数量</text>
+  </view>
+  <view class="number">
+    <text class="numberReduce" bindtap="reduce">-</text>
+    <text class="numberMoney">{{number}}</text>
+    <text class="numberAdd" bindtap="add">+</text>
+  </view>
+
+</view>

@@ -1,0 +1,34 @@
+<fui-bottom-popup show="{{isshow}}" bindclose="closePopup">
+  <view class="fui-custom__wrap">
+    <view class="box">
+      <view class="box-logo">
+        <image class="box-img" src="{{img}}" alt="" />
+      </view>
+      <view class="box-right">
+        <view class="box-title">
+          <text>{{water}}</text>
+        </view>
+        <view class="box-money">
+          <text>{{money}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="class">
+      <text>品牌</text>
+      <scroll-view  scroll-y="true">
+      <view class="scroll">
+        <view wx:for="{{array}}" wx:key="id" data-key="{{item}}" class="box-o" bindtap="onSelect" >
+          <view class="scroll-commodity" style="background-color: {{background}}">
+            <text class="commodity-lable">{{item.lable}}</text>
+            <text class="commodity-title">{{item.title}}</text>
+          </view>
+        </view>
+      </view>
+      </scroll-view>
+      <view>
+        <number/>
+      </view>
+      <button bindtap="onSubmit" class="btn" style="width: 90vw; height: 45px">确定</button>
+    </view>
+  </view>
+</fui-bottom-popup>

@@ -1,0 +1,30 @@
+<view class="newPage">
+  <view class="card">
+    <view class="nameAddress">
+      <view class="namePhone">
+        <text>收货人：丁海超</text>
+        <text>15142257040</text>
+      </view>
+      <view class="address">
+        <text>三环新城7号院7号4单元2703</text>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="icon">
+        <icon class="icon-box-img" type="success" size="30"></icon>
+        <text>设为默认</text>
+      </view>
+      <view class="edit">
+        <image src="/pages/state/icon/editor.png" />
+        <text>编辑</text>
+      </view>
+      <view class="del">
+        <image src="/pages/state/icon/delete.png" />
+        <text>删除</text>
+      </view>
+    </view>
+  </view>
+  <fui-dialog show="{{show}}" content="{{content}}" maskClosable bindclick="onClick" bindclose="onClose"></fui-dialog>
+  <popup id='popup' bind:error="_error" bind:success="_success"></popup>
+  <button bindtap="showPopup" class="btn" style="width: 90vw; height: 45px">新建收货地址</button>
+</view>

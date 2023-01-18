@@ -8,23 +8,32 @@ Page({
     nbFrontColor: '#ffffff',
     nbBackgroundColor: '#000000',
     avatarUrl: '',
-    nickName: '',
+    nickName: '@我还小',
+    disabled: false,
+    url: ''
   },
-  getUserInfo() {
-    wx.getUserProfile({
-      desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        this.setData({
-          avatarUrl: res.userInfo.avatarUrl,
-          nickName: res.userInfo.nickName,
-          hasUserInfo: true
-        })
-        wx.setStorageSync('userLogo', res.userInfo.avatarUrl)
-        wx.setStorageSync('userName', res.userInfo.nickName)
-        console.log(res.userInfo.nickName, 88)
-        console.log(res.userInfo.avatarUrl, 18)
-      }
+  onSubmit1() {
+    this.setData({
+      url: '/pages/new/new?id=1',
     })
+  },
+  onSubmit2() {},
+  onSubmit3() {},
+  onSubmit4() {},
+  getUserInfo(open) {
+    const that = this
+        console.log(open);
+          this.setData({
+            avatarUrl: open.detail.avatarUrl,
+          })
+          if(that.data.avatarUrl) {
+            console.log(that.data.avatarUrl, 10);
+            this.setData({
+              disabled: true
+            })
+          }
+        wx.setStorageSync('userLogo', open.detail.avatarUrl)
+        // console.log(that.data.nickName, 88)
   },
   // onLaunch() {
 
@@ -37,10 +46,15 @@ Page({
    */
   onLoad(options) {
   var logo = wx.getStorageSync('userLogo')
-  var name = wx.getStorageSync('userName')
+  if (logo) {
+    this.setData({
+      disabled: true
+    })
+  }
+  // var name = wx.getStorageSync('userName')
   this.setData({
     avatarUrl: logo,
-    nickName: name,
+    // nickName: name,
   })
     console.log(10);
   },
@@ -56,7 +70,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
   },
 
   /**

@@ -15,5 +15,8 @@
     <view>预览</view>
     <image src="{{image}}" mode="widthFix" />
   </view>
+  <view>
+    <notTable count="{{count}}"></notTable>
+  </view>
 
 </view>

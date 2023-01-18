@@ -1,0 +1,45 @@
+<!--pages/components/newPages/dialog/dialog.wxml-->
+<view class="wx-popup" hidden="{{flag}}">
+  <view class='popup-container'>
+    <view class="wx-popup-title">{{title}}</view>
+    <view class="wx-popup-con">
+      <view>
+        <input placeholder="收货姓名"></input>
+        <input placeholder="手机号"></input>
+      </view>
+      <view>
+        <text>获取定位信息</text>
+      </view>
+      <view>
+        <view bindtap="onPopup">
+          <text>所在地区：</text>
+          <text>></text>
+        </view>
+      </view>
+      <view>
+        <input placeholder="详细地址" />
+      </view>
+    </view>
+    <view class="wx-popup-btn">
+      <button class="btn-no" bindtap='_error'>取消</button>
+      <button class="btn-ok" bindtap='_success'>确定</button>
+    </view>
+  </view>
+  <view>
+    <fui-bottom-popup show="{{isShow}}" bindclose="closePopup">
+      <view class="fui-custom__wrap">
+        <view class="header">
+          <text>取消</text>
+          <text>确定</text>
+        </view>
+        <view>
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">
+              当前选择：{{region[0]}}{{region[1]}}{{region[2]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </fui-bottom-popup>
+  </view>
+</view>

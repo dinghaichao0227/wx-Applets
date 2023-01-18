@@ -2,21 +2,31 @@
   "pages": [
     "pages/home/home",
     "pages/user/index",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/new/new",
+    "components/notTbale/noTable",
+    "pages/order/order",
+    "pages/components/popup/popup",
+    "pages/components/notTable/notTable",
+    "pages/components/number/number",
+    "pages/components/newPages/newPages",
+    "pages/components/dialog/dialog"
   ],
   "window": {
     "enablePullDownRefresh": true,
-    "backgroundTextStyle": "dark", 
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "我是新手",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#f5f5f5"
+    "backgroundColor": "#f5f5f5",
+    "darkmode": true
   },
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#000000",
     "backgroundColor": "#F5F5F5",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "pages/state/icon/bbs.png",
@@ -29,6 +39,12 @@
         "selectedIconPath": "pages/state/icon/hdb.png"
       },
       {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "pages/state/icon/orderw.png",
+        "selectedIconPath": "pages/state/icon/orderb.png"
+      },
+      {
         "pagePath": "pages/user/index",
         "text": "我的",
         "iconPath": "pages/state/icon/wds.png",
@@ -36,7 +52,9 @@
       }
     ]
   },
-  "usingComponents": {},
+  "usingComponents": {
+    "fui-bottom-popup": "components/firstui/fui-bottom-popup/fui-bottom-popup"
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

@@ -1,0 +1,29 @@
+/* pages/components/number/number.wxss */
+.box {
+  display: flex;
+  justify-content:space-between;
+  padding: 20px 10px;
+}
+.number {
+  width: 90px;
+  height: 33px;
+  background-color: #e2e2e2;
+  text-align: center;
+  line-height: 30px;
+}
+.numberReduce,
+.numberAdd {
+  display: inline-block;
+  width: 30px;
+  height: 28px;
+  /* background-color: red; */
+}
+.numberMoney {
+  display: inline-block;
+  /* margin: 3px 10px 3px 10px; */
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 28px;
+}

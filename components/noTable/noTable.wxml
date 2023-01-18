@@ -1,0 +1,6 @@
+<!--components/notTbale/noTable.wxml-->
+<view class="notable">
+  <view class="notable-box">
+    <text>暂无数据</text>
+  </view>
+</view>

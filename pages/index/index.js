@@ -7,6 +7,7 @@ Page({
     nbFrontColor: '#ffffff',
     nbBackgroundColor: '#000000',
     motto: 'what are you doing',
+    count: 232222
   },
   takePhoto() {
     const ctx = wx.createCameraContext()

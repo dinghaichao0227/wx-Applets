@@ -1,0 +1,81 @@
+.newPage {
+  width: 100%;
+  height: 100vh;
+  background-color: #e2e1e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card {
+  height: 150px;
+  background-color: #fff;
+}
+
+.nameAddress {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  justify-content: space-between;
+  padding: 10px 50px;
+
+}
+
+.namePhone {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.address {
+  font-size: 15px;
+
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(211, 211, 211);
+  padding: 10px 20px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  width: 170px;
+}
+
+.edit {
+  display: flex;
+  width: 100px;
+  height: 25px;
+  align-items: center;
+  margin-left: 90px;
+}
+
+.edit>image {
+  width: 25px;
+  height: 100%;
+
+}
+
+.del {
+  display: flex;
+  width: 150px;
+  height: 25px;
+  align-items: center;
+
+}
+
+.del>image {
+  width: 25px;
+  height: 100%;
+}
+.btn {
+  background-color: red;
+  margin: 20px 0px;
+  color: #fff;
+  font-weight: normal;
+}

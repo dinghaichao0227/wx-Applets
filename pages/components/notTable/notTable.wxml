@@ -1,0 +1,2 @@
+<!--pages/components/notTable.wxml-->
+<text>wwhat{{count}}</text>

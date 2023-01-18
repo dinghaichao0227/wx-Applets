@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "paying": "/components/paying/paying",
+    "noTable": "/components/noTable/noTable"
+  }
+}

@@ -11,8 +11,9 @@
         </view>
         <view class="top-right">
           <view class="top-right-top">
-            <text wx:if="{{nickName}}">{{nickName}}</text>
-            <text wx:else class="size-btn" bindtap="getUserInfo" style="font-size: 25rpx; color: #5a5a5a; margin-bottom: 10rpx;">登录 ></text>
+          <text wx:if="{{avatarUrl}}">{{nickName}}</text>
+            <!-- <input wx:if="{{avatarUrl}}" type="nickname"/> -->
+            <button wx:else class="size-btn" disabled="{{disabled}}" size="mini" bindchooseavatar="getUserInfo" open-type="chooseAvatar" style="font-size: 25rpx; color: #5a5a5a; margin-bottom: 10rpx;">登录 ></button>
             <!-- <button size="mini" style="font-size: 20rpx; color: #5a5a5a;">本店公众号 ></button> -->
           </view>
         </view>
@@ -39,22 +40,22 @@
         <text>我的订单</text>
       </view>
       <view class="card-btn">
-        <view class="btn-box1">
+        <navigator class="btn-box1" url='/pages/new/new?id=1'>
           <image class="box1-img" src="../state/icon/hdg.png" mode="" />
           <text class="box1-size">待付款</text>
-        </view>
-        <view class="btn-box2">
+        </navigator>
+        <navigator class="btn-box2" url='/pages/new/new?id=2'>
           <image class="box2-img" src="../state/icon/hdb.png" mode="" />
           <text class="box2-size">待配送</text>
-        </view>
-        <view class="btn-box3">
+        </navigator>
+        <navigator class="btn-box3" url='/pages/new/new?id=3'>
           <image class="box3-img" src="../state/icon/bbs.png" mode="" />
           <text class="box3-size">配送中</text>
-        </view>
-        <view class="btn-box4">
+        </navigator>
+        <navigator class="btn-box4" url='/pages/new/new?id=4'>
           <image class="box4-img" src="../state/icon/bb.png" />
           <text class="box4-size">已完成</text>
-        </view>
+        </navigator>
       </view>
     </view>
   </view>
