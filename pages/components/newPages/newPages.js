@@ -6,6 +6,9 @@ Page({
    */
   data: {
     show: false,
+    name: "丁艳春",
+    phone: 15142257040,
+    address: "三环新城7号院7号4单元2703"
   },
   onDialog() {
     this.setData({
@@ -42,15 +45,34 @@ Page({
   showPopup() {
     this.popup.showPopup();
     console.log(1111);
+    // this.setData({
+    //   name: " ",
+    // })
+    // var that = this;
+    // that.data.name == " " ? that.data.name="丁海超" : ""
+  },
+  editPopup() {
+    this.popup.editPopup();
+    // this.setData({
+    //   name: '丁艳春',
+    //   phone: 15142257040,
+    // })
+    console.log(11);
   },
   _error() {
     console.log('你点击了取消');
     this.popup.hidePopup();
   },
   //确认事件
-  _success() {
+  _success(e) {
     console.log('你点击了确定');
     this.popup.hidePopup();
+    console.log(e);
+    this.setData({
+      name: e.detail.onName,
+      phone: e.detail.onPhone,
+      address: e.detail.onAddress
+    })
   },
 
   /**

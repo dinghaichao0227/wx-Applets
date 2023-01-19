@@ -34,7 +34,7 @@
       },
       {
         "pagePath": "pages/index/index",
-        "text": "活动",
+        "text": "商城",
         "iconPath": "pages/state/icon/hdg.png",
         "selectedIconPath": "pages/state/icon/hdb.png"
       },

@@ -1,19 +1,18 @@
-/**index.wxss**/
-.userinfo {
+.content {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+.left {
+  width: 80px;
+  height: 100vh;
+  background-color: #ccc;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: #aaa;
+  flex-shrink: 0;
 }
-
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.camera {
-  width: 20rem;
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
