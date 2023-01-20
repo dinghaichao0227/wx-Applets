@@ -5,6 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    nbTitle: '订单',
+    nbFrontColor: '#ffffff',
+    nbBackgroundColor: '#000000',
     border1: '',
     border2: '',
     border3: '',

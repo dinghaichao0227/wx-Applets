@@ -1,76 +1,79 @@
 <view class="order">
-<view class="header" bindtap="onNewPages">
-  <view class="address">
-    <view class="addressName">
-      <text>收货人：丁海超</text>
-      <text>15142257040</text>
+  <page-meta>
+    <navigation-bar title="{{nbTitle}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" color-animation-timing-func="easeIn" />
+  </page-meta>
+  <view class="header" bindtap="onNewPages">
+    <view class="address">
+      <view class="addressName">
+        <text>收货人：丁海超</text>
+        <text>15142257040</text>
+      </view>
+      <view>
+        <text>三环新城7号院7号4单元2703</text>
+      </view>
     </view>
-    <view>
-      <text>三环新城7号院7号4单元2703</text>
-    </view>
-  </view>
-  <view class="click">
-    <text>></text>
-  </view>
-</view>
-<view class="card1">
-  <view class="img1" bindtap="onPopup">
-    <view class="image">
-      <image class="whate" src="/pages/state/icon/1.png" mode=""/>
-    </view>
-    <view class="title">
-      <text>农夫山泉19L</text>
-      <text class="money">￥30.00</text>
-    </view>
-    <view class="label">
-      <text>切换 ></text>
+    <view class="click">
+      <text>></text>
     </view>
   </view>
-  <view class="quantity">
-    <number/>
+  <view class="card1">
+    <view class="img1" bindtap="onPopup">
+      <view class="image">
+        <image class="whate" src="/pages/state/icon/1.png" mode="" />
+      </view>
+      <view class="title">
+        <text>农夫山泉19L</text>
+        <text class="money">￥30.00</text>
+      </view>
+      <view class="label">
+        <text>切换 ></text>
+      </view>
+    </view>
+    <view class="quantity">
+      <number />
+    </view>
+    <view class="message">
+      <text>备注留言</text>
+      <input type="text" placeholder="您可以在这给我们留言" />
+    </view>
   </view>
-  <view class="message">
-    <text>备注留言</text>
-    <input type="text" placeholder="您可以在这给我们留言"/>
-  </view>
-</view>
 
-<view class="card2">
-  <view class="img2">
+  <view class="card2">
+    <view class="img2">
       <text>支付方式</text>
-  </view>
-  <view class="defray">
-    <view class="wt">
-      <icon class="icon-small" type="success" size="23"></icon>
-      <text>水票支付</text>
     </view>
-    <view class="text1">
-      <text>剩余0张</text>
+    <view class="defray">
+      <view class="wt">
+        <icon class="icon-small" type="success" size="23"></icon>
+        <text>水票支付</text>
+      </view>
+      <view class="text1">
+        <text>剩余0张</text>
+        <icon class="icon-small" type="success" size="23"></icon>
+      </view>
+    </view>
+    <view class="message">
+      <view class="wx">
+        <icon class="icon-small" type="success" size="23"></icon>
+        <text>微信支付</text>
+      </view>
       <icon class="icon-small" type="success" size="23"></icon>
     </view>
   </view>
-  <view class="message">
-  <view class="wx">
-    <icon class="icon-small" type="success" size="23"></icon>
-    <text>微信支付</text>
+  <view class="card3">
+    <view class="commodity">
+      <text>商品金额</text>
+      <text>￥30.00</text>
+    </view>
+    <view class="commodityMoney">
+      <text>应付金额</text>
+      <text style="color: red; font-weight: 600">￥30.00</text>
+    </view>
   </view>
-    <icon class="icon-small" type="success" size="23"></icon>
+  <view>
+    <button class="btn" style="width: 97vw; height: 45px">确定</button>
   </view>
-</view>
-<view class="card3">
-  <view class="commodity">
-    <text>商品金额</text>
-    <text>￥30.00</text>
+  <view>
   </view>
-  <view class="commodityMoney">
-    <text>应付金额</text>
-    <text style="color: red; font-weight: 600">￥30.00</text>
-  </view>
-</view>
-<view>
-  <button class="btn" style="width: 97vw; height: 45px">确定</button>
-</view>
-<view>
-</view>
-<popup isshow="{{isshow}}" bindhidepopop="hidePopop"></popup>
+  <popup isshow="{{isshow}}" bindhidepopop="hidePopop"></popup>
 </view>

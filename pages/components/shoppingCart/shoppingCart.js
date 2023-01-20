@@ -2,7 +2,7 @@
 
 Component({
   properties: {
-    isshow: {
+    show: {
       type:Boolean,
     }
   },
@@ -11,76 +11,70 @@ Component({
     img:"/pages/state/icon/1.png",
     water:"农夫山泉19L",
     money:"￥30",
-    current: 0,
-    array: [
-      {
-        id: 1,
-        lable: "农夫山泉19L",
-        title: "水票2张",
-      },
-      {
-        id: 2,
-        lable: "恒大冰泉19L",
-        title: "水票1张",
-      },
-      {
-        id: 3,
-        lable: "纯悦19L",
-        title: "水票2张",
-      },
-      {
-        id: 4,
-        lable: "纯悦19L",
-        title: "水票2张",
-      },
-      {
-        id: 5,
-        lable: "纯悦19L",
-        title: "水票2张",
-      },
-      {
-        id: 6,
-        lable: "纯悦19L",
-        title: "水票2张",
-      },
-      {
-        id: 7,
-        lable: "纯悦19L",
-        title: "水票2张",
-      },
-      {
-        id: 8,
-        lable: "纯悦19L",
-        title: "水票2张",
-      },
-      {
-        id: 9,
-        lable: "纯悦19L111",
-        title: "水票2张",
-      },
-      {
-        id: 10,
-        lable: "纯悦19L",
-        title: "水票2张",
-      },
-      {
-        id: 11,
-        lable: "纯悦19L",
-        title: "水票2张",
-      },
-      {
-        id: 12,
-        lable: "纯悦219L",
-        title: "水票2张",
-      },
-    ]
+    array: []
+    //   {
+    //     index: 1,
+    //     lable: "农夫山泉19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     index: 2,
+    //     lable: "恒大冰泉19L",
+    //     title: "水票1张",
+    //   },
+    //   {
+    //     index: 3,
+    //     lable: "纯悦19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     index: 4,
+    //     lable: "纯悦19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     index: 5,
+    //     lable: "纯悦19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     index: 6,
+    //     lable: "纯悦19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     index: 7,
+    //     lable: "纯悦19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     index: 8,
+    //     lable: "纯悦19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     index: 9,
+    //     lable: "纯悦19L111",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     lable: "纯悦19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     lable: "纯悦19L",
+    //     title: "水票2张",
+    //   },
+    //   {
+    //     lable: "纯悦219L",
+    //     title: "水票2张",
+    //   },
+    // ]
   },
   methods: {
     onSelect(e) {
-      console.log(e.currentTarget.dataset.key.id);
-      var id = e.currentTarget.dataset.key.id
+      console.log(e.currentTarget.dataset.key.index);
       this.setData({
-        current: id,
         water: e.currentTarget.dataset.key.lable,
       })
       // if (e.currentTarget.dataset.key.index ==1) {
@@ -95,7 +89,7 @@ Component({
     showPopup() {
       // this.isshow = true
       this.setData({
-        isshow:true
+        show:true
       })
       console.log(1111);
     },
@@ -104,11 +98,10 @@ Component({
       // var myEventOption = {} // 触发事件的选项
       console.log(`子组件：'向父组件发送通知，我要关闭弹窗'`)
       this.triggerEvent('hidepopop')
-      
     },
     onSubmit() {
       this.setData({
-        isshow:false
+        show:false
       })
     }
   },

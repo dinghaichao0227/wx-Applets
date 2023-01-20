@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "number":"/pages/components/number/number"
+  }
+}

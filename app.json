@@ -10,7 +10,9 @@
     "pages/components/notTable/notTable",
     "pages/components/number/number",
     "pages/components/newPages/newPages",
-    "pages/components/dialog/dialog"
+    "pages/components/dialog/dialog",
+    "pages/components/commodity/commodityList",
+    "pages/components/shoppingCart/shoppingCart"
   ],
   "window": {
     "enablePullDownRefresh": true,

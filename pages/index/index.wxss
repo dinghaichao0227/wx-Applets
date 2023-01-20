@@ -1,18 +1,84 @@
 .content {
   display: flex;
   width: 100%;
+  height: 500px;
   flex: 1;
 }
+.content-left {
+  display: flex;
+  flex-shrink: 0;
+}
+.content-right {
+  flex: 1;
+} 
 .left {
   width: 80px;
   height: 100vh;
-  background-color: #ccc;
+  background-color: rgb(240, 239, 239);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
 }
 .right {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+.title {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  overflow-x: hidden;
+}
+/* .title:hover {
+  background-color: #fff;
+} */
+.piece {
+  display: flex;
+}
+.img {
+  width: 200px;
+  height: 150px;
+}
+.img>image {
+  width: 100%;
+  height: 100%;
+}
+.label {
+  display: flex;
+  flex-direction: column
+}
+.label-name {
+  font-size: 19px;
+}
+.monthlySales {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 5px;
+}
+.label-title {
+  font-size: 12px;
+  color: #ccc;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+  padding: 0px 5px;
+}
+.foter-money {
+  color: red;
+  font-weight: 600;
+}
+.active {
+  background-color: #fff;
 }

@@ -1,14 +1,105 @@
-<view class="content'">
-  <scroll-view  scroll-y="true">
+<view class="content">
+  <page-meta>
+    <navigation-bar title="{{nbTitle}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" color-animation-timing-func="easeIn" />
+  </page-meta>
+<view class="contant-left">
+  <scroll-view scroll-y="true" style="width: 80px; height: 100vh;">
     <view class="left">
-    111111
+      <view class="{{currentCampus==item.id?'active':''}}" wx:for="{{array}}" wx:key="id" data-key="{{item}}" bindtap="onItemName" data-id="{{item.id}}">
+        <text class="title">{{item.name}}</text>
+      </view>
+    </view>
+    <view class="icon" bindtap="onIcon">
+    <icon type="success" size="50"/>
   </view>
-    </scroll-view>
-    <scroll-view  scroll-y="true">
-  <view class="right">
+  </scroll-view>
+  
+</view>
+  <view class="content-right">
+    <scroll-view scroll-y="true" style="height: 100vh;">
+    <view class="right" wx:if="{{content}}" bindtap="onPupup">
+      <view class="piece">
+        <view class="img">
+          <image src="/pages/state/icon/car-fill.png">1111</image>
+        </view>
+        <view class="label">
+          <text class="label-name">{{name}}</text>
+          <text class="label-title">{{label}}</text>
+          <text class="monthlySales">月售10+</text>
+          <view class="footer">
+            <text class="foter-money">{{money}}</text>
+            <icon  class="icon-box-img" type="success" size="25"></icon>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="right" wx:if="{{content}}">
+      <view class="piece">
+        <view class="img">
+          <image src="/pages/state/icon/car-fill.png">1111</image>
+        </view>
+        <view class="label">
+          <text class="label-name">{{name}}</text>
+          <text class="label-title">{{label}}</text>
+          <text class="monthlySales">月售10+</text>
+          <view class="footer">
+            <text class="foter-money">{{money}}</text>
+            <icon  class="icon-box-img" type="success" size="25"></icon>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="right" wx:if="{{content}}">
+      <view class="piece">
+        <view class="img">
+          <image src="/pages/state/icon/car-fill.png">1111</image>
+        </view>
+        <view class="label">
+          <text class="label-name">{{name}}</text>
+          <text class="label-title">{{label}}</text>
+          <text class="monthlySales">月售10+</text>
+          <view class="footer">
+            <text class="foter-money">{{money}}</text>
+            <icon  class="icon-box-img" type="success" size="25"></icon>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="right" wx:if="{{content}}">
+      <view class="piece">
+        <view class="img">
+          <image src="/pages/state/icon/car-fill.png">1111</image>
+        </view>
+        <view class="label">
+          <text class="label-name">{{name}}</text>
+          <text class="label-title">{{label}}</text>
+          <text class="monthlySales">月售10+</text>
+          <view class="footer">
+            <text class="foter-money">{{money}}</text>
+            <icon  class="icon-box-img" type="success" size="25"></icon>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="right" wx:if="{{content}}">
+      <view class="piece">
+        <view class="img">
+          <image src="/pages/state/icon/car-fill.png">1111</image>
+        </view>
+        <view class="label">
+          <text class="label-name">{{name}}</text>
+          <text class="label-title">{{label}}</text>
+          <text class="monthlySales">月售10+</text>
+          <view class="footer">
+            <text class="foter-money">{{money}}</text>
+            <icon  class="icon-box-img" type="success" size="25"></icon>
+          </view>
+        </view>
+      </view>
+    </view>
 
-    2222
+  </scroll-view>
   </view>
-
-    </scroll-view>
+  <commodityList isshow="{{isshow}}" bindhidepopop="hidePopop"></commodityList>
+  <shoppingCart show="{{show}}" bindhidepopop="hidePopops"></shoppingCart>
 </view>

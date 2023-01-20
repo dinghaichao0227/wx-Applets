@@ -63,8 +63,7 @@
   border-radius: 5px;
 
 }
-
-.active {
+.scroll-commodity:hover {
   background-color: red;
 }
 .commodity-lable {
@@ -79,9 +78,31 @@
   font-size: 14px;
   color: #808080;
 }
-.btn {
+.addBtn {
+  background-color: rgb(247, 193, 93);
+  color: #fff;
+  white-space:nowrap;
+  text-align: center;
+  height: 50px;
+  line-height: 30px;
+  font-size: 15px;
+}
+.onBtn {
   background-color: red;
   color: #fff;
   white-space:nowrap;
-
+  text-align: center;
+  height: 50px;
+  line-height: 30px;
+  font-size: 15px;
+  font-style: none;
+  margin-left: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  display: flex;
+  width: 260px;
 }

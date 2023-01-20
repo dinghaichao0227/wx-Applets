@@ -17,8 +17,8 @@
       <text>品牌</text>
       <scroll-view  scroll-y="true">
       <view class="scroll">
-        <view wx:for="{{array}}" wx:key="id" data-key="{{item}}" class="box-o" bindtap="onSelect"  data-id="{{item.id}}">
-          <view class="scroll-commodity {{current== item.id?'active': ''}}" >
+        <view wx:for="{{array}}" wx:key="id" data-key="{{item}}" class="box-o" bindtap="onSelect" >
+          <view class="scroll-commodity" style="background-color: {{background}}">
             <text class="commodity-lable">{{item.lable}}</text>
             <text class="commodity-title">{{item.title}}</text>
           </view>
@@ -28,7 +28,13 @@
       <view>
         <number/>
       </view>
-      <button bindtap="onSubmit" class="btn" style="width: 90vw; height: 45px">确定</button>
+      <view class="footer">
+        <icon type="success" size="50" />
+        <view class="btn">
+          <button bindtap="onSubmit" class="addBtn" style="width: 120px">加入购物车</button>
+          <button bindtap="onSubmit" class="onBtn" style="width: 120px">立即购买</button>
+        </view>
     </view>
+      </view>
   </view>
 </fui-bottom-popup>

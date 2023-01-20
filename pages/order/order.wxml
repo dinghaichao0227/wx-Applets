@@ -1,5 +1,8 @@
 <!--pages/new.wxml-->
 <view class="content">
+  <page-meta>
+    <navigation-bar title="{{nbTitle}}" front-color="{{nbFrontColor}}" background-color="{{nbBackgroundColor}}" color-animation-timing-func="easeIn" />
+  </page-meta>
   <view class="bottom">
     <view class="bottom-left">
       <text class="bottom-left-font" bindtap="onSubmit1" style="border-bottom:{{border1}}">待支付</text>
