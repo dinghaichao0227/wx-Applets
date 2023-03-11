@@ -20,6 +20,7 @@ Page({
   onSubmit2() {},
   onSubmit3() {},
   onSubmit4() {},
+ 
   getUserInfo(open) {
     const that = this
         console.log(open);

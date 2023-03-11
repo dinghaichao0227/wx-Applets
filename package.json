@@ -1,8 +1,28 @@
 {
   "dependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
     "yarn": "^1.22.19"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0"
-  }
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  },
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinghaichao0227/wx-Applets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dinghaichao0227/wx-Applets/issues"
+  },
+  "homepage": "https://github.com/dinghaichao0227/wx-Applets#readme",
+  "description": ""
 }

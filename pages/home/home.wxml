@@ -30,7 +30,7 @@
       </view>
     </view>
     <view class="quantity">
-      <number />
+      <number bind:addNumer="addNumer" bind:reducenumber="reducenumber"></number>
     </view>
     <view class="message">
       <text>备注留言</text>
@@ -63,15 +63,15 @@
   <view class="card3">
     <view class="commodity">
       <text>商品金额</text>
-      <text>￥30.00</text>
+      <text>￥{{shopNumber}}</text>
     </view>
     <view class="commodityMoney">
       <text>应付金额</text>
-      <text style="color: red; font-weight: 600">￥30.00</text>
+      <text style="color: red; font-weight: 600">￥{{wxNumber}}</text>
     </view>
   </view>
   <view>
-    <button class="btn" style="width: 97vw; height: 45px">确定</button>
+    <button bindgetphonenumber="getPhone" open-type="getPhoneNumber" class="btn" style="width: 97vw; height: 45px">确定</button>
   </view>
   <view>
   </view>

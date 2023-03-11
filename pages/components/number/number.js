@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    number: 0,
+    number: 1,
 
   },
   add() {
@@ -13,15 +13,19 @@ Page({
       this.setData({
         number: that.data.number += 1,
       })
+      var addnumber = that.data.number
+      this.triggerEvent('addNumer', addnumber)
   },
   reduce() {
     var that = this;
     this.setData({
-      number: that.data.number == 0 ? 0 : that.data.number -= 1,
+      number: that.data.number == 1 ? 1 : that.data.number -= 1,
     })
-    if (that.data.number == 0) {
-      that.data.number == 0
+    if (that.data.number == 1) {
+      that.data.number == 1
     }
+    var reducenumber = that.data.number
+    this.triggerEvent('reducenumber', reducenumber)
   },
 
   /**

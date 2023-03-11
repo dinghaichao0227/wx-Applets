@@ -1,4 +1,5 @@
 // pages/home/home.js
+// var crypto = require("../../utils/crypto.js")
 Page({
 
   /**
@@ -14,8 +15,40 @@ Page({
     text: "",
     number: 0,
     isshow: false,
+    iphoneNumber: null,
+    shopNumber: "30.00",
+    wxNumber: "30.00"
   },
+  addNumer(e) {
+    // console.log(e.detail,);
+    this.setData({
+      shopNumber: (e.detail*=30).toFixed(2),
+      wxNumber: (+this.data.shopNumber + 30).toFixed(2)
+    })
+    
+  },
+  reducenumber(e){
+    // console.log(e.detail);
+    // if(e.detail === 1) {
+    //   this.setData({
+    //     shopNumber: 30.00
+    //   })
+    // }
+    this.setData({
+      shopNumber: e.detail === 1 ?(this.data.shopNumber = 30).toFixed(2) : (this.data.shopNumber-=30).toFixed(2),
+      wxNumber: (this.data.shopNumber).toFixed(2)
 
+    })
+  },
+  getPhone(e) {
+    // console.log(crypto.AesDecrypt(e.detail.code))
+    // console.log(crypto.AesDecrypt(e.detail.code), 8080);
+    this.setData({
+      // iphoneNumber: crypto.AesDecrypt(e.detail.code)
+    })
+    console.log(this.data.iphoneNumber, 11180);
+
+  },
   onPopup() {
     this.setData({
       isshow: true,
@@ -101,6 +134,7 @@ Page({
       console.log(result, 88);
     })
     that.onBtn1
+    that.aesDecrypt
     // const that = this
     // wx.onThemeChange(that.onBtn) 
   },
@@ -109,7 +143,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+    
   },
 
   /**

@@ -1,31 +1,15 @@
-/*
- * Eslint config file
- * Documentation: https://eslint.org/docs/user-guide/configuring/
- * Install the Eslint extension before using this feature.
- */
 module.exports = {
   env: {
-    es6: true,
     browser: true,
-    node: true,
+    es2021: true,
   },
-  ecmaFeatures: {
-    modules: true,
-  },
+  extends: 'airbnb-base',
+  overrides: [
+  ],
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  globals: {
-    wx: true,
-    App: true,
-    Page: true,
-    getCurrentPages: true,
-    getApp: true,
-    Component: true,
-    requirePlugin: true,
-    requireMiniProgram: true,
+  rules: {
   },
-  // extends: 'eslint:recommended',
-  rules: {},
-}
+};
